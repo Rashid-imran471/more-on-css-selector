@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    nav a{
+        color:green;
+    }
+    nav > h2{
+        color: red;
+        background-color:snow;
+    }
+    ul+p{
+        color: red;
+    }
+    a[href]{
+        color: red;
+        text-decoration: none;
+    }
+    a[class="active"]{
+        color: blue;
+        text-decoration: underline;
+    }
+    a[target="_self"]
+    {
+        background-color: grey;
+    }
+    p:last-child::after{
+        content:"...";
+    }
+    li::marker{
+        color: green;
+    }
+    p:nth-child(even)::first-letter
+    {
+        color:red;
+        font-size: 30px;
+    }
+</style>
+
+<body>
+    <header>
+        <nav>
+            <h2>TOI</h2>
+            <div>
+                <h2>Menu</h2>
+                <ul>
+                    <li><a href="#" target="_blank">Home</a></li>
+                    <li><a href="#" class="active" target="_self">About</a></li>
+                    <li><a href="#" target="_blank">Services</a></li>
+                    <li><a href="#" target="_blank">Contact</a></li>
+                </ul>
+            </div>
+            <p>The times of India</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi accusamus sit, neque delectus ut natus
+                provident voluptas aspernatur enim dolorem repellat quaerat non, repudiandae ullam et exercitationem rem
+                dolores temporibus officia dolorum numquam modi nostrum quas officiis. Voluptate nulla doloribus officia
+                saepe sunt aspernatur perferendis a. Unde id quae architecto.</p>
+                <p>read more articles</p>
+        </nav>
+    </header>
+</body>
+</html>
